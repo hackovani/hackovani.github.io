@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container--flex space-between headings">
+    <h2>Archiv událostí</h2>
+  </div>
+
+  {% for event in site.categories.events %}
+  {% if event.url %}
+  <article class="article">
+    <header class="article__header">
+      <h3>{{ event.title }}</h3>
+      <span>{{ event.date | date: '%A %-d.%m.%Y' }} /
+        {{ event.date | date: '%R' }} / {{event.room}}</span>
+
+    </header>
+
+    <p>{{ event.excerpt }}</p>
+    <a href="{{ event.url }}" class="button">více informací</a>
+  </article>
+
+  {% endif %}
+  {% endfor %}
+</section>

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container--flex space-between headings">
+    <h2>Naplánované události</h2><a href="/event_archive" class="button">archiv událostí</a>
+  </div>
+
+
+  <article class="article">
+    <header class="article__header">
+      <h3>{{ site.categories.events[0].title }}</h3>
+      <span>{{ site.categories.events[0].date | date: '%A %-d.%m.%Y' }} /
+        {{ site.categories.events[0].date | date: '%R' }} / {{site.categories.events[0].room}}</span>
+
+    </header>
+
+    <p>{{ site.categories.events[0].excerpt }}</p>
+    <a href="{{ site.categories.events[0].url }}" class="button">více informací</a>
+  </article>
+</section>
+
+
+<section>
+  <div class="container--flex space-between headings">
+    <h2>Možnosti studentských projektů</h2><a href="/project_archive" class="button">zobrazit vše</a>
+  </div>
+
+  {% for project in site.categories.projects %}
+  {% if project.url %}
+  <article class="article">
+    <header class="article__header">
+      <h3>{{ project.title }}</h3>
+      <span>{{ project.author }}</span>
+    </header>
+
+    <p>{{ project.excerpt }}</p>
+
+    <a href="{{ project.url }}" class="button">více informací</a>
+  </article>
+
+  {% endif %}
+  {% endfor %}
+
+  <div class="text--center"><a href="#" class="button">zobrazit vše</a></div>
+</section>
