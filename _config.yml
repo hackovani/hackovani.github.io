@@ -19,18 +19,21 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Háčkování - studentský seminář na katedře informatiky Olomouc
-about: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aliquam erat volutpat. Integer lacinia.
-hacker_definition: A person who enjoys exploring the details of programmable systems and how to stretch their capabilities, as opposed to most users, who prefer to learn only the minimum necessary.
-join_us: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aliquam erat volutpat. Integer lacinia.
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+hacker_definition: >-
+  A person who enjoys exploring the details of programmable systems and how to stretch their 
+  capabilities, as opposed to most users, who prefer to learn only the minimum necessary.
+join_us: >-
+Pokud se chceš podílet na 'Háčkování', máš zajímavý nápad na projekt, nebo chceš 
+uspořádat malý hackaton ozvi se nám! Prostor si najde každý.
+email: mail@tomasmikula.cz
+description: >-
+  Háčkování je studentská iniciativa v rámci katedry informatiky na univerzitě Palackého v Olomouci.
+  Klademe si za cíl nabídnout možnost seberealizace nad rámec výuky a to především v zajímavých projektech nebo hackatonech.
+  Vítáni jsou všichni bez ohledu na znalosti, důležitá je chuť zkoumat!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  hackovani
 
+# Include also posts from future, hack for events.
 future: true
 
 # Build settings
