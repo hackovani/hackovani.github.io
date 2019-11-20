@@ -24,11 +24,11 @@ hacker_definition: >-
   capabilities, as opposed to most users, who prefer to learn only the minimum necessary.
 join_us: >-
   Pokud se chceš podílet na 'Háčkování', máš zajímavý nápad na projekt, nebo chceš 
-  uspořádat malý hackaton ozvi se nám! Prostor si najde každý.
+  uspořádat malý hackaton **ozvi se nám**! Prostor si najde každý.
 email: mail@tomasmikula.cz
 description: >-
-  Háčkování je studentská iniciativa v rámci katedry informatiky na univerzitě Palackého v Olomouci.
-  Klademe si za cíl nabídnout možnost seberealizace nad rámec výuky a to především v zajímavých projektech nebo hackatonech.
+  Háčkování je studentská iniciativa v rámci **katedry informatiky** na univerzitě Palackého v Olomouci.
+  Klademe si za cíl nabídnout možnost seberealizace nad rámec výuky a to především v **zajímavých projektech** nebo **hackatonech**.
   Vítáni jsou všichni bez ohledu na znalosti, důležitá je chuť zkoumat!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

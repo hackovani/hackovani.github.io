@@ -5,7 +5,7 @@
             alt="" aria-hidden="true" class="logo"></a>
 
     <h2>Co je ‘Háčkování’?</h2>
-    <p>{{ site.description | escape }}</p>
+    <p>{{ site.description | markdownify }}</p>
 
     <p class="definition">
         <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
@@ -13,7 +13,7 @@
         <p>
 
             <h2>Zapoj se</h2>
-            <p>{{ site.join_us | escape }}</p>
+            <p>{{ site.join_us | markdownify }}</p>
 
             <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
 
