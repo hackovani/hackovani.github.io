@@ -1,25 +1,28 @@
-{% if page.display_header == True %}
 <header>
-    {% else %}
-    <header style="display: block;">
-
-        {% endif %}
+    <a href="/">
         <h1>Háčkování</h1>
-        <a href="/"><img src="{{ '/assets/img/logo/logo.png' | absolute_url }}"
-                srcset="{{ '/assets/img/logo/logo@2x.png' | absolute_url }} 2x, '/assets/img/logo/logo@3x.png' | absolute_url }} 3x"
-                alt="" aria-hidden="true" class="logo"></a>
+    </a>
+    {% if page.display_header == True %}
+    <div>
+        {% else %}
+        <div style="display: block;">
+            {% endif %}
+            <a href="/"><img src="{{ '/assets/img/logo/logo.png' | absolute_url }}"
+                    srcset="{{ '/assets/img/logo/logo@2x.png' | absolute_url }} 2x, '/assets/img/logo/logo@3x.png' | absolute_url }} 3x"
+                    alt="" aria-hidden="true" class="logo"></a>
 
-        <h2>Co je ‘Háčkování’?</h2>
-        <p>{{ site.description | markdownify }}</p>
+            <h2>Co je ‘Háčkování’?</h2>
+            <p>{{ site.description | markdownify }}</p>
 
-        <p class="definition">
-            <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
-            {{ site.hacker_definition | escape }}
-            <p>
+            <p class="definition">
+                <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
+                {{ site.hacker_definition | escape }}
+                <p>
 
-                <h2>Zapoj se</h2>
-                <p>{{ site.join_us | markdownify }}</p>
+                    <h2>Zapoj se</h2>
+                    <p>{{ site.join_us | markdownify }}</p>
 
-                <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
+                    <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
+        </div>
 
-    </header>
+</header>
