@@ -95,6 +95,6 @@ img {width: 100%;}
   .logo {display: none;}
   h1 {display: block; font-size: 2rem;}
   body {flex-wrap: wrap; width: 100%; box-sizing: border-box; margin: 0}
-  body > header {width: 100%; margin: 4vw; }
+  body > header {width: 100%; margin: 4vw; display: none;}
   main {width: 100%; margin: 4vw;}
 }
