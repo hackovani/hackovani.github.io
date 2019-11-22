@@ -7,7 +7,7 @@ layout: default
     <h2>Naplánované události</h2><a href="/event_archive" class="button">archiv událostí</a>
   </div>
 
-
+  {% if site.categories.events %}
   <article class="article">
     <header class="article__header">
       <h3>{{ site.categories.events[0].title }}</h3>
@@ -19,6 +19,12 @@ layout: default
     <p>{{ site.categories.events[0].excerpt }}</p>
     <a href="{{ site.categories.events[0].url }}" class="button">více informací</a>
   </article>
+  {% else %}
+  <article class="article">
+
+    <p>Na plánovaní událostí usilovně pracujeme :)</p>
+  </article>
+  {% endif %}
 </section>
 
 

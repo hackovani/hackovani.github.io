@@ -13,9 +13,10 @@ layout: default
       <span>{{ page.author }}</span>
     </header>
 
-    <p>{{ page.excerpt }}</p>
+    <p>{{ content }}</p>
 
-    <a href="{{ project.url }}" class="button">kontaktovat autora</a>
+    <h2>Máš o projekt zájem?</h2>
+    <a href="mailto:{{ page.contact }}" class="button">kontaktovat autora</a>
   </article>
 
 </section>
