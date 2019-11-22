@@ -38,6 +38,18 @@ a {
   color: #CE2324;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+a:hover h3 {
+  color: #CE2324;
+}
+
+a:hover h1 {
+  color: #CE2324;
+}
+
 .button::before {content: '['; display: inline;}
 .button::after {content: ']'; display: inline;}
 

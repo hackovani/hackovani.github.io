@@ -10,7 +10,9 @@ layout: default
   {% if site.categories.events %}
   <article class="article">
     <header class="article__header">
-      <h3>{{ site.categories.events[0].title }}</h3>
+      <a href="{{ site.categories.events[0].url }}">
+        <h3>{{ site.categories.events[0].title }}</h3>
+      </a>
       <span>{{ site.categories.events[0].date | date: '%A %-d.%m.%Y' }} /
         {{ site.categories.events[0].date | date: '%R' }} / {{site.categories.events[0].room}}</span>
 
@@ -38,7 +40,9 @@ layout: default
   {% if project.url %}
   <article class="article">
     <header class="article__header">
-      <h3>{{ project.title }}</h3>
+      <a href="{{ project.url }}">
+        <h3>{{ project.title }}</h3>
+      </a>
       <span>{{ project.author }}</span>
     </header>
 
