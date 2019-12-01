@@ -18,6 +18,14 @@ body {
   width: 1000px;
 }
 
+figure {
+    margin-left: 0px;
+}
+
+.code {
+	padding-left: 10px;
+}
+
 body > header {width: 30%;}
 main {width: 60%;}
 

@@ -9,6 +9,7 @@
     <meta property="og:description"
         content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta property="og:image" content="/assets/img/social/social.png">
+    <link rel="stylesheet" href="{{ '/assets/css/github.css' | prepend: full_base_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: full_base_url }}">
     <title>{{ site.title | escape }}{% if page.title %} - {{ page.title | escape }}{% endif %}</title>
 </head>
