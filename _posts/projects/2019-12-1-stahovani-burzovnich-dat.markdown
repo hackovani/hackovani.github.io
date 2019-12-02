@@ -13,9 +13,9 @@ Pro analýzu trhu a vytváření obchodních strategií, je potřeba mít
   následujícím obrázku je vývoj směnného kurzu bitcoinu vzhledem k
   americkému dolaru.
 
-<!--more-->
-
 ![Vývoj směnného kurzu bitcoinu vzhledem k americkému dolaru.](/assets/img/projects/btcusd-candles.png)
+
+<!--more-->
 
 Na takových datech se pak testují vytvořené strategie, jestli jsou
   výdělečné. Je však potřeba je získat.
