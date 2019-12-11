@@ -2,7 +2,7 @@
 layout: event		
 title:  "Háčkování vol. 1"		
 date:   2019-12-19 16:45:00 +0100		
-room: '5.070'		
+room: '5.003'		
 excerpt_separator: <!--more-->		
 categories: events		
 ---
