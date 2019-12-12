@@ -11,7 +11,7 @@ categories: events
 
 Máte stále výchozí heslo na školním Windows účtu? Používáte rodné číslo jako heslo na svůj soukromý email nebo PayPal? Přijďte s námi zjistit, jak moc těžké je tyto hesla prolomit. A aby toho nebylo málo, tak vám to okořeníme spoluprací v týmu a nutností chápat cizí kód.
 
-**Nezávazná přihláška (do 9.12.): [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScjnEIENPaFHyeGn5kao81llwuDix7gF9zMnT7ye4G7DSXntg/viewform)**
+**Nezávazná přihláška: [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScjnEIENPaFHyeGn5kao81llwuDix7gF9zMnT7ye4G7DSXntg/viewform)**
 
 <!--more-->
 
