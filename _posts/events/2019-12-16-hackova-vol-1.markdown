@@ -15,4 +15,4 @@ Máte stále výchozí heslo na školním Windows účtu? Používáte rodné č
 
 <!--more-->
 
-Start **16:45**, učebna **5.070** rozdělení do dvou teamu a začátek semináře.
+Start **16:45**, učebna **5.003** rozdělení do dvou teamu a začátek semináře.
