@@ -20,15 +20,17 @@
     </a>
 
     <h2>Co je ‘Háčkování’?</h2>
-    <p>{{ site.description | markdownify }}</p>
+    {{ site.description | markdownify }}
 
     <p class="definition">
       <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
       {{ site.hacker_definition | escape }}
-    <p>
+    </p>
 
     <h2>Zapojte se</h2>
-    <p>{{ site.join_us | markdownify }}</p>
+    <div>
+      {{ site.join_us | markdownify }}
+    </div>
 
     <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
   </div>
