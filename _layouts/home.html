@@ -2,57 +2,79 @@
 layout: default
 ---
 
+<!-- Naplánované události -->
 <section>
-  <div class="container--flex space-between headings">
-    <h2>Naplánované události</h2><a href="/event_archive" class="button">archiv událostí</a>
+  <div class="container--flex space-between headings headings--no-mt">
+    <h2>Naplánované události</h2>
+    <a title="Archiv událostí" href="/event_archive" class="button">archiv událostí</a>
   </div>
 
   {% if site.categories.events %}
+
   <article class="article">
     <header class="article__header">
-      <a href="{{ site.categories.events[0].url }}">
+      <a title="{{ site.categories.events[0].title }}" href="{{ site.categories.events[0].url }}">
         <h3>{{ site.categories.events[0].title }}</h3>
       </a>
-      <span>{{ site.categories.events[0].date | date: '%A %-d.%m.%Y' }} /
-        {{ site.categories.events[0].date | date: '%R' }} / {{site.categories.events[0].room}}</span>
 
+      <span>
+        <time datetime="{{ site.categories.events[0].date | date: '%Y-%m-%d %R' }}">
+          {{ site.categories.events[0].date | date: '%A %-d.%m.%Y' }} /
+          {{ site.categories.events[0].date | date: '%R' }}
+        </time> /
+        {{site.categories.events[0].room}}
+      </span>
     </header>
 
-    <p>{{ site.categories.events[0].excerpt }}</p>
+    <div>
+      {{ site.categories.events[0].excerpt }}
+    </div>
+
     <a href="{{ site.categories.events[0].url }}" class="button">více informací</a>
   </article>
-  {% else %}
-  <article class="article">
 
+  {% else %}
+
+  <article class="article">
     <p>Na plánovaní událostí usilovně pracujeme :)</p>
   </article>
+
   {% endif %}
 </section>
+<!-- END - Naplánované události -->
 
-
+<!-- Studentské projekty -->
 <section>
   <div class="container--flex space-between headings">
-    <h2>Možnosti studentských projektů</h2><a href="/project_archive" class="button">zobrazit vše</a>
+    <h2>Možnosti studentských projektů</h2>
+    <a title="Všechny možnosti studentských projektů" href="/project_archive" class="button">zobrazit vše</a>
   </div>
+
   <p>Máte zájem vytvořit něco nad rámec výuky a nenapadá vás co? Vyberte si jeden ze studentských projektů.</p>
 
   {% for project in site.categories.projects %}
   {% if project.url %}
+
   <article class="article">
     <header class="article__header">
-      <a href="{{ project.url }}">
+      <a title="{{ project.title }}" href="{{ project.url }}">
         <h3>{{ project.title }}</h3>
       </a>
       <span>{{ project.author }}</span>
     </header>
 
-    <p>{{ project.excerpt }}</p>
+    <div>
+      {{ project.excerpt }}
+    </div>
 
-    <a href="{{ project.url }}" class="button">více informací</a>
+    <a title="Více informací o projektu: {{ project.title }}" href="{{ project.url }}" class="button">více informací</a>
   </article>
 
   {% endif %}
   {% endfor %}
 
-  <div class="text--center"><a href="/project_archive" class="button">zobrazit vše</a></div>
+  <div class="text--center">
+    <a title="Všechny možnosti studentských projektů" href="/project_archive" class="button">zobrazit vše</a>
+  </div>
 </section>
+<!-- END - Studentské projekty -->

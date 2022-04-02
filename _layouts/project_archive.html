@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section>
-  <div class="container--flex space-between headings">
+  <div class="container--flex space-between headings headings--no-mt">
     <h2>Studentské projekty</h2>
   </div>
 
@@ -15,7 +15,9 @@ layout: default
       <span>{{ project.author }}</span>
     </header>
 
-    <p>{{ project.excerpt }}</p>
+    <div>
+      {{ project.excerpt }}
+    </div>
 
     <a href="{{ project.url }}" class="button">více informací</a>
   </article>

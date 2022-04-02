@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section>
-  <div class="container--flex space-between headings">
+  <div class="container--flex space-between headings headings--no-mt">
     <h2>Archiv událostí</h2>
   </div>
 
@@ -12,12 +12,19 @@ layout: default
   <article class="article">
     <header class="article__header">
       <h3>{{ event.title }}</h3>
-      <span>{{ event.date | date: '%A %-d.%m.%Y' }} /
-        {{ event.date | date: '%R' }} / {{event.room}}</span>
 
+      <span>
+        <time datetime="{{ event.date | date: '%Y-%m-%d %R' }}">
+          {{ event.date | date: '%A %-d.%m.%Y' }} /
+          {{ event.date | date: '%R' }}
+        </time> /
+        {{event.room}}
+      </span>
     </header>
 
-    <p>{{ event.excerpt }}</p>
+    <div>
+      {{ event.excerpt }}
+    </div>
     <a href="{{ event.url }}" class="button">více informací</a>
   </article>
 
