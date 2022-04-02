@@ -19,7 +19,8 @@ layout: default
 
       <span>
         <time datetime="{{ site.categories.events[0].date | date: '%Y-%m-%d %R' }}">
-          {{ site.categories.events[0].date | date: '%A %-d.%m.%Y' }} /
+          {{ site.categories.events[0].date | date: '%A' | czechDayDate }}
+          {{ site.categories.events[0].date | date: '%d. %m. %Y' }} /
           {{ site.categories.events[0].date | date: '%R' }}
         </time> /
         {{site.categories.events[0].room}}

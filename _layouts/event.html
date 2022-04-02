@@ -14,7 +14,8 @@ layout: default
   
       <span>
         <time datetime="{{ page.date | date: '%Y-%m-%d %R' }}">
-          {{ page.date | date: '%A %-d.%m.%Y' }} /
+          {{ page.date | date: '%A' | czechDayDate }}
+          {{ page.date | date: '%d. %m. %Y' }} /
           {{ page.date | date: '%R' }}
         </time> /
         {{page.room}}
