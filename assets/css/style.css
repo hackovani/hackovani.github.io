@@ -72,9 +72,11 @@ a:hover h1 {
   align-items: center;
   border-bottom: 1px solid #D8D8D8;
   padding: 0.3rem 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
   box-sizing: border-box;
 }
+
+.headings--no-mt {margin-top: 0;}
 
 .headings h2 {
   font-size: 1.4rem;

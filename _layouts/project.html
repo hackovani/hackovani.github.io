@@ -3,8 +3,9 @@ layout: default
 ---
 
 <section>
-  <div class="container--flex space-between headings">
-    <h2>Studentský projekt</h2><a href="/project_archive" class="button">zobrazit vše</a>
+  <div class="container--flex space-between headings headings--no-mt">
+    <h2>Studentský projekt</h2>
+    <a title="Všechny možnosti studentských projektů" href="/project_archive" class="button">zobrazit vše</a>
   </div>
 
   <article class="article">
@@ -13,7 +14,9 @@ layout: default
       <span>{{ page.author }}</span>
     </header>
 
-    <p>{{ content }}</p>
+    <div>
+        {{ content }}
+    </div>
 
     <h2>Máte o projekt zájem?</h2>
     <a href="mailto:{{ page.contact }}" class="button">kontaktovat autora</a>

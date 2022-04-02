@@ -1,28 +1,38 @@
 <header>
-    <a href="/">
-        <h1>Háčkování</h1>
+
+  <a title="Háčkování - Hlavní stránka" href="/">
+    <h1>Háčkování</h1>
+  </a>
+
+  {% if page.display_header == True %}
+  <div>
+  {% else %}
+
+  <div style="display: block;">
+    {% endif %}
+    <a title="Háčkování - Hlavní stránka" href="/">
+      <img class="logo"
+        alt="Logo Háčkování"
+        src="{{ '/assets/img/logo/logo.png' | absolute_url }}"
+        srcset="{{ '/assets/img/logo/logo@2x.png' | absolute_url }} 2x, {{ '/assets/img/logo/logo@3x.png' | absolute_url }} 3x"
+        aria-hidden="true"
+      >
     </a>
-    {% if page.display_header == True %}
+
+    <h2>Co je ‘Háčkování’?</h2>
+    {{ site.description | markdownify }}
+
+    <p class="definition">
+      <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
+      {{ site.hacker_definition | escape }}
+    </p>
+
+    <h2>Zapojte se</h2>
     <div>
-        {% else %}
-        <div style="display: block;">
-            {% endif %}
-            <a href="/"><img src="{{ '/assets/img/logo/logo.png' | absolute_url }}"
-                    srcset="{{ '/assets/img/logo/logo@2x.png' | absolute_url }} 2x, '/assets/img/logo/logo@3x.png' | absolute_url }} 3x"
-                    alt="" aria-hidden="true" class="logo"></a>
+      {{ site.join_us | markdownify }}
+    </div>
 
-            <h2>Co je ‘Háčkování’?</h2>
-            <p>{{ site.description | markdownify }}</p>
-
-            <p class="definition">
-                <dfn>hacker</dfn> <i>|ˈhakə|</i><br>
-                {{ site.hacker_definition | escape }}
-                <p>
-
-                    <h2>Zapojte se</h2>
-                    <p>{{ site.join_us | markdownify }}</p>
-
-                    <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
-        </div>
+    <a href="mailto:{{ site.email }}" class="button">napiš e-mail</a>
+  </div>
 
 </header>
