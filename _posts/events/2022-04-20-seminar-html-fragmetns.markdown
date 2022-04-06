@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "Seminář: HTML Fragmets"
-date:   2022-04-22 09:30:00 +0000
+date:   2022-04-20 13:15:00 +0000
 room: '5.078'
 excerpt_separator: <!--more-->
 categories: events
