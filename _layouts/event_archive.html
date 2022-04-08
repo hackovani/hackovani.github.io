@@ -11,11 +11,14 @@ layout: default
   {% if event.url %}
   <article class="article">
     <header class="article__header">
-      <h3>{{ event.title }}</h3>
+      <a title="{{ event.title }}" href="{{ event.url }}">
+          <h3>{{ event.title }}</h3>
+      </a>
 
       <span>
         <time datetime="{{ event.date | date: '%Y-%m-%d %R' }}">
-          {{ event.date | date: '%A' | czechDayDate }}
+          {% assign day = event.date | date: '%u' | minus: 1 %}
+          {{ site.czdays[day] }}
           {{ event.date | date: '%d. %m. %Y' }} /
           {{ event.date | date: '%R' }}
         </time> /

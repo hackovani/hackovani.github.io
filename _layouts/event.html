@@ -14,7 +14,8 @@ layout: default
   
       <span>
         <time datetime="{{ page.date | date: '%Y-%m-%d %R' }}">
-          {{ page.date | date: '%A' | czechDayDate }}
+          {% assign day = page.date | date: '%u' | minus: 1 %}
+          {{ site.czdays[day] }}
           {{ page.date | date: '%d. %m. %Y' }} /
           {{ page.date | date: '%R' }}
         </time> /
