@@ -35,6 +35,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Include also posts from future, hack for events.
 future: true
 
+czdays:
+  - "Pondělí"
+  - "Úterý"
+  - "Středa"
+  - "Čtvrtek"
+  - "Pátek"
+  - "Sobota"
+  - "Neděle"
+
 # Build settings
 # theme: minima
 plugins:
