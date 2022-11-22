@@ -11,29 +11,33 @@ layout: default
 
   {% if site.categories.events %}
 
+  {% for event in site.categories.events limit:3 %}
+  {% if event.url %}
   <article class="article">
     <header class="article__header">
-      <a title="{{ site.categories.events[0].title }}" href="{{ site.categories.events[0].url }}">
-        <h3>{{ site.categories.events[0].title }}</h3>
+      <a title="{{ event.title }}" href="{{ event.url }}">
+          <h3>{{ event.title }}</h3>
       </a>
 
       <span>
-        <time datetime="{{ site.categories.events[0].date | date: '%Y-%m-%d %R' }}">
-          {% assign day = site.categories.events[0].date | date: '%u' | minus: 1 %}
+        <time datetime="{{ event.date | date: '%Y-%m-%d %R' }}">
+          {% assign day = event.date | date: '%u' | minus: 1 %}
           {{ site.czdays[day] }}
-          {{ site.categories.events[0].date | date: '%d. %m. %Y' }} /
-          {{ site.categories.events[0].date | date: '%R' }}
+          {{ event.date | date: '%d. %m. %Y' }} /
+          {{ event.date | date: '%R' }}
         </time> /
-        {{site.categories.events[0].room}}
+        {{event.room}}
       </span>
     </header>
 
     <div>
-      {{ site.categories.events[0].excerpt }}
+      {{ event.excerpt }}
     </div>
-
-    <a href="{{ site.categories.events[0].url }}" class="button">více informací</a>
+    <a href="{{ event.url }}" class="button">více informací</a>
   </article>
+
+  {% endif %}
+  {% endfor %}
 
   {% else %}
 
@@ -46,7 +50,7 @@ layout: default
 <!-- END - Naplánované události -->
 
 <!-- Studentské projekty -->
-<section>
+<!-- <section>
   <div class="container--flex space-between headings">
     <h2>Možnosti studentských projektů</h2>
     <a title="Všechny možnosti studentských projektů" href="/project_archive" class="button">zobrazit vše</a>
@@ -78,5 +82,5 @@ layout: default
   <div class="text--center">
     <a title="Všechny možnosti studentských projektů" href="/project_archive" class="button">zobrazit vše</a>
   </div>
-</section>
+</section> -->
 <!-- END - Studentské projekty -->
